@@ -60,6 +60,10 @@
 #define Z_DIR_PIN                           PE0
 #define Z_ENABLE_PIN                        PE1
 
+#define Z2_ENABLE_PIN                       PG8
+#define Z2_STEP_PIN                         PC7
+#define Z2_DIR_PIN                          PC6
+
 #define E0_STEP_PIN                         PB4
 #define E0_DIR_PIN                          PB5
 #define E0_ENABLE_PIN                       PB8
@@ -98,6 +102,7 @@
 //
 // LCD Pins
 //
+//#define HAS_WIRED_LCD 1
 #if HAS_WIRED_LCD
 
   #if ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
