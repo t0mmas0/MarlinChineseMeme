@@ -787,6 +787,8 @@
   #endif
 #endif
 
+#define USE_Z2_MIN_PLUG
+#define Z2_MIN_PIN        PA13
 //
 // Multi-Z steppers
 //
@@ -795,7 +797,7 @@
 
   #define Z_MULTI_ENDSTOPS          // Other Z axes have their own endstops
   #if ENABLED(Z_MULTI_ENDSTOPS)
-    #define Z2_USE_ENDSTOP   Z2_STOP_PIN   // Z2 endstop board plug. Don't forget to enable USE_*_PLUG.
+    #define Z2_USE_ENDSTOP   Z2_MIN_PIN   // Z2 endstop board plug. Don't forget to enable USE_*_PLUG.
     #define Z2_ENDSTOP_ADJUSTMENT 0   // Z2 offset relative to Y endstop
   #endif
   #ifdef Z3_DRIVER_TYPE
