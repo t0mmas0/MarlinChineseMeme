@@ -58,6 +58,7 @@
 #ifndef Z_STOP_PIN
   #define Z_STOP_PIN                        PG9
 #endif
+#define Z2_STOP_PIN                         PA13
 
 //
 // Steppers
@@ -78,9 +79,9 @@
 #define E0_STEP_PIN                         PB4
 #define E0_DIR_PIN                          PB5
 
-#define E1_ENABLE_PIN                       PG8
-#define E1_STEP_PIN                         PC7
-#define E1_DIR_PIN                          PC6
+#define Z2_ENABLE_PIN                       PG8
+#define Z2_STEP_PIN                         PC7
+#define Z2_DIR_PIN                          PC6
 
 //
 // Temperature Sensors
